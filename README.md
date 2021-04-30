@@ -19,7 +19,7 @@ foreach($files as $file){
         ->getFilename().PHP_EOL;
 }
 ```
-####The above code will print:
+#### The above code will print:
 ```php
 folder-2741806_1280.png
 gallery
@@ -30,23 +30,23 @@ wall-2558279_1920.jpg
 ```
 
 
-##2. How to use?
+## 2. How to use?
 
 
-###2.1Clone the repository:
+### 2.1 Clone the repository:
 
 `git clone https://github.com/marvinoliveiras/image-gallery-without-database`
 
-###2.2 Install the dependencies:
+### 2.2 Install the dependencies:
 
 `composer install`
 
-###2.3 Go up your PHP server:
+### 2.3 Go up your PHP server:
 
 `php -s localhost: 80 -t public`
 
 
-###2.4 Main routes:
+### 2.4 Main routes:
 - Public home: `http://localhost`
 - Admin home: `http://localhost/admin`
 
