@@ -1,0 +1,4 @@
+php_flag engine off
+<Files ~ "\.html$">
+   deny from all
+</Files>

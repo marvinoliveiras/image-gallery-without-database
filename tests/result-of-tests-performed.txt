@@ -1,0 +1,19 @@
+Check File Extension (Tests\Unit\CheckFileExtension)
+ [x] Correctly identify image extension
+
+String Filter (Tests\Unit\StringFilter)
+ [x] Whether to remove invalid characters from the file name
+ [x] Whether to remove invalid characters from the directory name
+
+Delete Gallery (Tests\Integration\DeleteGallery)
+ [x] Delete gallery empty
+ [x] Delete gallery with files
+
+Persist Directory (Tests\Integration\PersistDirectory)
+ [x] Empty gallery name pass
+ [x] Null gallery name pass
+ [x] Gallery creation
+
+Remove File (Tests\Integration\RemoveFile)
+ [x] Exclusion of image
+

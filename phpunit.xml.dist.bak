@@ -1,0 +1,33 @@
+<phpunit processIsolation="true" stderr="true"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/8.0/phpunit.xsd"
+        bootstrap="public/index.php"
+        colors="true">
+    <php>
+        <server name="KERNEL_CLASS" value="AppKernel" />
+        <env name="KERNEL_CLASS" value="App\Kernel" />
+        <const name="PREFIXPATH" value="tests/galleries-test/"/>
+        <env name="APP_ENV" value="test" />
+        <env name="APP_ENV" value="dev"/>
+        <env name="APP_SECRET" value="403692090580d0d5f7a92cfc96e768b5"/>
+
+        <env name="BOOTSTRAP_CLEAR_CACHE_ENV" value="test"/>
+        <env name = "SYMFONY_ENV" value = "test" force = "true" />
+        <ini name='output_buffering' value='On' />
+    </php>
+    <testsuites>
+        <testsuite name="unit">
+            <directory>tests/Unit</directory>
+        </testsuite>
+        <testsuite name="integration">
+            <directory>tests/Integration</directory>
+        </testsuite>
+        <testsuite name="PHPT Test Suite">
+            <directory suffix=".phpt">tests/Integration/phpt</directory>
+        </testsuite>
+    </testsuites>
+    <logging>
+        <log type="testdox-text" target=
+        "tests/result-of-tests-performed.txt" />
+    </logging>
+</phpunit>
