@@ -6,7 +6,7 @@ This image gallery was developed using only PHP in the beckend, it is not necess
 [![list of images](/public/assets/img/screenshot/list-images.jpg "list of images")](/public/assets/img/screenshot/list-images.jpg "list of images")
 
 
-## how is it possible not to use DB?
+## 1. how is it possible not to use DB?
 This is possible thanks to the FilesystemIterator class, this class is native to PHP and it returns a list of files and folders that are inside the directory informed in its constructor.
 Note: this instance of FilesystemIterator, as its name suggests, is iterable as an array, that is, it can be used directly in a repetition structure such as for (), foreach () and etc.. See the example:
 ```php
@@ -19,7 +19,7 @@ foreach($files as $file){
         ->getFilename().PHP_EOL;
 }
 ```
-The above code will print:
+####The above code will print:
 ```php
 folder-2741806_1280.png
 gallery
@@ -29,14 +29,27 @@ top_directory.png
 wall-2558279_1920.jpg
 ```
 
-## 1. Dependencies:
+
+##2. How to use?
+###2.1Clone the repository:
+`git clone https://github.com/marvinoliveiras/image-gallery-without-database`
+###2.2 Install the dependencies: 
+`composer install`
+###2.3 Go up your PHP server: 
+`php -s localhost: 80 -t public`
+
+###2.4 Main routes: 
+- Public home: `http://localhost`
+- Admin home: `http://localhost/admin`
+
+## 3. Dependencies:
 - PHP 7 or above;
 
-### 1. 1 Development environment:
+### 3. 1 Development environment:
 - phpunit / phpunit;
 
-### 1.2 Production environment:
+### 3.2 Production environment:
 - PSR4 (Symfony autoload);
 
-## 2. License:
+## 4. License:
 - MIT
